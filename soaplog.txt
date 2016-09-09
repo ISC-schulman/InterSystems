@@ -1,0 +1,21 @@
+10/15/2014 15:54:02 *********************
+Output from Web client with SOAP action = http://test.systelab.com//createAsynchronuosRequest
+<?xml version="1.0" encoding="UTF-8" ?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV='http://schemas.xmlsoap.org/soap/envelope/' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:s='http://www.w3.org/2001/XMLSchema'>
+  <SOAP-ENV:Body><createAsynchronuosRequestElement xmlns="http://test.systelab.com/"><createAsynchronuosRequestElement xsi:type="s:string">aa</createAsynchronuosRequestElement></createAsynchronuosRequestElement></SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+
+10/15/2014 15:54:02 *********************
+Input to Web client with SOAP action = http://test.systelab.com//createAsynchronuosRequest
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:req="http://test.systelab.com/">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <req:createAsynchronuosRequestResponseElement>OK</req:createAsynchronuosRequestResponseElement>
+   </soapenv:Body>
+</soapenv:Envelope>
+---------------
+Validate Security header: action=http://test.systelab.com//createAsynchronuosRequest, MethodName=createAsynchronuosRequest
+**** SOAP client return error. method=createAsynchronuosRequest, action=http://test.systelab.com//createAsynchronuosRequest
+     ERROR #6203: Unexpected Element
+

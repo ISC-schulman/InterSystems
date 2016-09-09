@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="RequestWS" targetNamespace="http://test.systelab.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://test.systelab.com/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/">
+  <wsdl:types>
+    <schema elementFormDefault="qualified" targetNamespace="http://test.systelab.com/" xmlns="http://www.w3.org/2001/XMLSchema" xmlns:soap11-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <element name="assignDateToRequestElement" nillable="true" type="string"/>
+      <element name="assignDateToRequestResponseElement" nillable="true" type="string"/>
+      <element name="cancelRequestElement" nillable="true" type="string"/>
+      <element name="cancelRequestResponseElement" nillable="true" type="string"/>
+      <element name="changeSimpleRequestStatusElement" nillable="true" type="string"/>
+      <element name="changeSimpleRequestStatusResponseElement" nillable="true" type="string"/>
+      <element name="collectElement" nillable="true" type="string"/>
+      <element name="collectResponseElement" nillable="true" type="string"/>
+      <element name="createAsynchronuosRequestElement" nillable="true" type="string"/>
+      <element name="createAsynchronuosRequestResponseElement" nillable="true" type="string"/>
+      <element name="createRequestFromLISElement" nillable="true" type="string"/>
+      <element name="createRequestFromLISResponseElement" nillable="true" type="string"/>
+      <element name="createSynchronuosRequestElement" nillable="true" type="string"/>
+      <element name="createSynchronuosRequestResponseElement" nillable="true" type="string"/>
+      <element name="getCollectionReferralElement" nillable="true" type="string"/>
+      <element name="getCollectionReferralResponseElement" nillable="true" type="string"/>
+      <element name="getReportsRequestElement" nillable="true" type="string"/>
+      <element name="getReportsRequestResponseElement" nillable="true" type="string"/>
+      <element name="getRequestCollectedElement" nillable="true" type="string"/>
+      <element name="getRequestCollectedResponseElement" nillable="true" type="string"/>
+      <element name="getRequestInfoElement" nillable="true" type="string"/>
+      <element name="getRequestInfoResponseElement" nillable="true" type="string"/>
+      <element name="getRequestLISContainersCollectedElement" nillable="true" type="string"/>
+      <element name="getRequestLISContainersCollectedResponseElement" nillable="true" type="string"/>
+      <element name="getRequestLISContainersToCollectElement" nillable="true" type="string"/>
+      <element name="getRequestLISContainersToCollectResponseElement" nillable="true" type="string"/>
+      <element name="getRequestToCollectElement" nillable="true" type="string"/>
+      <element name="getRequestToCollectResponseElement" nillable="true" type="string"/>
+      <element name="getRequestToCollectNotAcceptedElement" nillable="true" type="string"/>
+      <element name="getRequestToCollectNotAcceptedResponseElement" nillable="true" type="string"/>
+      <element name="getSCCScheduleFromRequestElement" nillable="true" type="string"/>
+      <element name="getSCCScheduleFromRequestResponseElement" nillable="true" type="string"/>
+      <element name="modifyRequestElement" nillable="true" type="string"/>
+      <element name="modifyRequestResponseElement" nillable="true" type="string"/>
+      <element name="reSendRequestToLISElement" nillable="true" type="string"/>
+      <element name="reSendRequestToLISResponseElement" nillable="true" type="string"/>
+      <element name="receiveNewResultsElement" nillable="true" type="string"/>
+      <element name="receiveNewResultsResponseElement" nillable="true" type="string"/>
+      <element name="saveInformInBBDDElement" nillable="true" type="string"/>
+      <element name="saveInformInBBDDResponseElement" nillable="true" type="string"/>
+    </schema>
+  </wsdl:types>
+  <wsdl:message name="RequestWS_getRequestInfoResponse">
+    <wsdl:part name="return" element="tns:getRequestInfoResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getSCCScheduleFromRequestResponse">
+    <wsdl:part name="return" element="tns:getSCCScheduleFromRequestResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getReportsRequestResponse">
+    <wsdl:part name="return" element="tns:getReportsRequestResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestLISContainersCollectedResponse">
+    <wsdl:part name="return" element="tns:getRequestLISContainersCollectedResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_receiveNewResultsResponse">
+    <wsdl:part name="return" element="tns:receiveNewResultsResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestToCollectNotAccepted">
+    <wsdl:part name="parameters" element="tns:getRequestToCollectNotAcceptedElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_changeSimpleRequestStatusResponse">
+    <wsdl:part name="return" element="tns:changeSimpleRequestStatusResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getCollectionReferralResponse">
+    <wsdl:part name="return" element="tns:getCollectionReferralResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_reSendRequestToLIS">
+    <wsdl:part name="parameters" element="tns:reSendRequestToLISElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_createRequestFromLISResponse">
+    <wsdl:part name="return" element="tns:createRequestFromLISResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestCollected">
+    <wsdl:part name="parameters" element="tns:getRequestCollectedElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getCollectionReferral">
+    <wsdl:part name="parameters" element="tns:getCollectionReferralElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_collect">
+    <wsdl:part name="parameters" element="tns:collectElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestCollectedResponse">
+    <wsdl:part name="return" element="tns:getRequestCollectedResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_cancelRequestResponse">
+    <wsdl:part name="return" element="tns:cancelRequestResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestLISContainersToCollect">
+    <wsdl:part name="parameters" element="tns:getRequestLISContainersToCollectElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_createAsynchronuosRequestResponse">
+    <wsdl:part name="return" element="tns:createAsynchronuosRequestResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_createRequestFromLIS">
+    <wsdl:part name="parameters" element="tns:createRequestFromLISElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_collectResponse">
+    <wsdl:part name="return" element="tns:collectResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_saveInformInBBDDResponse">
+    <wsdl:part name="return" element="tns:saveInformInBBDDResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_modifyRequest">
+    <wsdl:part name="parameters" element="tns:modifyRequestElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_reSendRequestToLISResponse">
+    <wsdl:part name="return" element="tns:reSendRequestToLISResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_cancelRequest">
+    <wsdl:part name="parameters" element="tns:cancelRequestElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestInfo">
+    <wsdl:part name="parameters" element="tns:getRequestInfoElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestLISContainersCollected">
+    <wsdl:part name="parameters" element="tns:getRequestLISContainersCollectedElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_assignDateToRequestResponse">
+    <wsdl:part name="return" element="tns:assignDateToRequestResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestLISContainersToCollectResponse">
+    <wsdl:part name="return" element="tns:getRequestLISContainersToCollectResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_createSynchronuosRequest">
+    <wsdl:part name="parameters" element="tns:createSynchronuosRequestElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_receiveNewResults">
+    <wsdl:part name="parameters" element="tns:receiveNewResultsElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getSCCScheduleFromRequest">
+    <wsdl:part name="parameters" element="tns:getSCCScheduleFromRequestElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_assignDateToRequest">
+    <wsdl:part name="parameters" element="tns:assignDateToRequestElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestToCollectNotAcceptedResponse">
+    <wsdl:part name="return" element="tns:getRequestToCollectNotAcceptedResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_createSynchronuosRequestResponse">
+    <wsdl:part name="return" element="tns:createSynchronuosRequestResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_saveInformInBBDD">
+    <wsdl:part name="parameters" element="tns:saveInformInBBDDElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getReportsRequest">
+    <wsdl:part name="parameters" element="tns:getReportsRequestElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestToCollect">
+    <wsdl:part name="parameters" element="tns:getRequestToCollectElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_createAsynchronuosRequest">
+    <wsdl:part name="parameters" element="tns:createAsynchronuosRequestElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_modifyRequestResponse">
+    <wsdl:part name="return" element="tns:modifyRequestResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_getRequestToCollectResponse">
+    <wsdl:part name="return" element="tns:getRequestToCollectResponseElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RequestWS_changeSimpleRequestStatus">
+    <wsdl:part name="parameters" element="tns:changeSimpleRequestStatusElement">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="RequestWS">
+    <wsdl:operation name="assignDateToRequest">
+      <wsdl:input message="tns:RequestWS_assignDateToRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_assignDateToRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelRequest">
+      <wsdl:input message="tns:RequestWS_cancelRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_cancelRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeSimpleRequestStatus">
+      <wsdl:input message="tns:RequestWS_changeSimpleRequestStatus">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_changeSimpleRequestStatusResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="collect">
+      <wsdl:input message="tns:RequestWS_collect">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_collectResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createAsynchronuosRequest">
+      <wsdl:input message="tns:RequestWS_createAsynchronuosRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_createAsynchronuosRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createRequestFromLIS">
+      <wsdl:input message="tns:RequestWS_createRequestFromLIS">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_createRequestFromLISResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createSynchronuosRequest">
+      <wsdl:input message="tns:RequestWS_createSynchronuosRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_createSynchronuosRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCollectionReferral">
+      <wsdl:input message="tns:RequestWS_getCollectionReferral">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getCollectionReferralResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReportsRequest">
+      <wsdl:input message="tns:RequestWS_getReportsRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getReportsRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestCollected">
+      <wsdl:input message="tns:RequestWS_getRequestCollected">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getRequestCollectedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestInfo">
+      <wsdl:input message="tns:RequestWS_getRequestInfo">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getRequestInfoResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestLISContainersCollected">
+      <wsdl:input message="tns:RequestWS_getRequestLISContainersCollected">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getRequestLISContainersCollectedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestLISContainersToCollect">
+      <wsdl:input message="tns:RequestWS_getRequestLISContainersToCollect">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getRequestLISContainersToCollectResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestToCollect">
+      <wsdl:input message="tns:RequestWS_getRequestToCollect">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getRequestToCollectResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestToCollectNotAccepted">
+      <wsdl:input message="tns:RequestWS_getRequestToCollectNotAccepted">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getRequestToCollectNotAcceptedResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSCCScheduleFromRequest">
+      <wsdl:input message="tns:RequestWS_getSCCScheduleFromRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_getSCCScheduleFromRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyRequest">
+      <wsdl:input message="tns:RequestWS_modifyRequest">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_modifyRequestResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reSendRequestToLIS">
+      <wsdl:input message="tns:RequestWS_reSendRequestToLIS">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_reSendRequestToLISResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveNewResults">
+      <wsdl:input message="tns:RequestWS_receiveNewResults">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_receiveNewResultsResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveInformInBBDD">
+      <wsdl:input message="tns:RequestWS_saveInformInBBDD">
+    </wsdl:input>
+      <wsdl:output message="tns:RequestWS_saveInformInBBDDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RequestWS" type="tns:RequestWS">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="assignDateToRequest">
+      <soap:operation soapAction="http://test.systelab.com//assignDateToRequest"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cancelRequest">
+      <soap:operation soapAction="http://test.systelab.com//cancelRequest"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="changeSimpleRequestStatus">
+      <soap:operation soapAction="http://test.systelab.com//changeSimpleRequestStatus"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="collect">
+      <soap:operation soapAction="http://test.systelab.com//collect"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createAsynchronuosRequest">
+      <soap:operation soapAction="http://test.systelab.com//createAsynchronuosRequest"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createRequestFromLIS">
+      <soap:operation soapAction="http://test.systelab.com//createRequestFromLIS"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createSynchronuosRequest">
+      <soap:operation soapAction="http://test.systelab.com//createSynchronuosRequest"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCollectionReferral">
+      <soap:operation soapAction="http://test.systelab.com//getCollectionReferral"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getReportsRequest">
+      <soap:operation soapAction="http://test.systelab.com//getReportsRequest"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestCollected">
+      <soap:operation soapAction="http://test.systelab.com//getRequestCollected"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestInfo">
+      <soap:operation soapAction="http://test.systelab.com//getRequestInfo"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestLISContainersCollected">
+      <soap:operation soapAction="http://test.systelab.com//getRequestLISContainersCollected"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestLISContainersToCollect">
+      <soap:operation soapAction="http://test.systelab.com//getRequestLISContainersToCollect"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestToCollect">
+      <soap:operation soapAction="http://test.systelab.com//getRequestToCollect"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRequestToCollectNotAccepted">
+      <soap:operation soapAction="http://test.systelab.com//getRequestToCollectNotAccepted"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSCCScheduleFromRequest">
+      <soap:operation soapAction="http://test.systelab.com//getSCCScheduleFromRequest"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modifyRequest">
+      <soap:operation soapAction="http://test.systelab.com//modifyRequest"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reSendRequestToLIS">
+      <soap:operation soapAction="http://test.systelab.com//reSendRequestToLIS"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="receiveNewResults">
+      <soap:operation soapAction="http://test.systelab.com//receiveNewResults"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="saveInformInBBDD">
+      <soap:operation soapAction="http://test.systelab.com//saveInformInBBDD"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="return" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RequestWS">
+    <wsdl:port name="RequestWSSoapHttpPort" binding="tns:RequestWS">
+      <soap:address location="http://Jonathan-6e605abe6:8080/"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
